@@ -100,3 +100,9 @@ doing other stuff, but it's relatively less cool. just seeing different indices 
 the time is 8:20 PM, that feels relevant idk. so i'm first planning on yeeting all the parts of this .tif file that aren't "new york city". that feels like a nice clean first step. welp, i copied the coordinates for connecticut and struggled with that shit for 20 minutes cuz it didn't make sense on the map. i deserve to be hanged sometimes.
 
 ight got the right coordinates. ight done clipping. i have no idea how to check if it's correct, but something happened. ok so, everything done... did a stupid thing where the new bottom was higher than the previous bottom, thought this was a mistake, took me almost 40 minutes to realise that a higher bottom number meant higher up geographically. well, it won't be a me project if i don't do some gloriously stupid shit. anyway so clipping done. what next?
+
+decided that no matter how much more shit i do rn, it's not gonna matter much because i can't really know what kinda data and useage etc. is required for a chatbot. so i'm switching gears to implementing the chatbot itself. i think i have figured out enough tools to be able to at least make some decent dent in this bitch.
+
+# step 3: chatbot
+
+i started work but i'm completely and totally burnt out. can't write another word. i learnt a lot and did a lot. challenge failed but who gives a fuck. onwards tomorrow.
