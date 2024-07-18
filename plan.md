@@ -48,6 +48,6 @@ ok, using my advanced software engineering skills and unequalled computing prowe
 
 before we get into that tho, let's get some textual data. now because of the limits applied from the land use data, we'll have to be smart about this. need texts about north india from 2020. probably won't get clean data off kaggle or something. might have to explore like, govt agencies and shit.
 
-    tbh i can probably do get by with what i have, idk. one possible strategy atp is to just train with the land use data, cuz the primary purpose of this exercise is just to understand how this shit works. we can add text data later, it's not like nlp is an issue.
+tbh i can probably do get by with what i have, idk. one possible strategy atp is to just train with the land use data, cuz the primary purpose of this exercise is just to understand how this shit works. we can add text data later, it's not like nlp is an issue.
 
-    another alternative is to find some textual data for some location, then download the land use data from there, and rewrite the questions to fit that. that's actually the better alternative. i deserve cookies sometimes :D
+another alternative is to find some textual data for some location, then download the land use data from there, and rewrite the questions to fit that. that's actually the better alternative. i deserve cookies sometimes :D
