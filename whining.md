@@ -53,20 +53,20 @@ tbh i can probably do get by with what i have, idk. one possible strategy atp is
 another alternative is to find some textual data for some location, then download the land use data from there, and rewrite the questions to fit that. that's actually the better alternative. i deserve cookies sometimes :D
 
 ight-o im going with new york. t'is 4:02 PM and i've achieved... one github repo, lunch and a 15 min nap :|
-ok whatever, now i delete these 600 MB of .tif files. fun. i hates them. replaced with 2021 2022 2023 data of new york. tbh new york's a tiny part of it, it's a huge area, whatever it covered new york that's all that matters ig. gonna need new questions now. 
+ok whatever, now i delete these 600 MB of .tif files. fun. i hates them. replaced with 2022 2023 2024 data of new york. tbh new york's a tiny part of it, it's a huge area, whatever it covered new york that's all that matters ig. gonna need new questions now. 
 
 question set #4389021832019 here goes:
 
-    1. Can you show me the latest satellite imagery of New York City from 2021?
-    2. What is the land use distribution in Manhattan for 2022?
-    3. How has the green space area in Central Park changed from 2021 to 2023?
-    4. Can you provide the population density map of Brooklyn for 2023?
-    5. What were the main traffic congestion areas in New York City in 2022?
-    6. Show me the changes in urban development in Queens from 2021 to 2023.
-    7. Can you find flood-prone areas in New York City from the 2022 data?
+    1. Can you show me the latest satellite imagery of New York City from 2022?
+    2. What is the land use distribution in Manhattan for 2023?
+    3. How has the green space area in Central Park changed from 2022 to 2024?
+    4. Can you provide the population density map of Brooklyn for 2024?
+    5. What were the main traffic congestion areas in New York City in 2023?
+    6. Show me the changes in urban development in Queens from 2022 to 2024.
+    7. Can you find flood-prone areas in New York City from the 2023 data?
     8. What is the elevation profile of Staten Island?
-    9. Provide a heat map of air pollution levels in the Bronx for 2021.
-    10. Can you identify areas suitable for new park developments in New York City based on 2023 data?
+    9. Provide a heat map of air pollution levels in the Bronx for 2022.
+    10. Can you identify areas suitable for new park developments in New York City based on 2024 data?
 
 sooooooooooooo sleepy. we march on. textual data let's go.
 
@@ -86,3 +86,17 @@ screw this it's a waste of time. nothing works. i'm just gonna move onto the nex
 
 # step 2: preprocessing
 
+ok so i've downloaded rasterio. already feeling better from the dumpster fire of the previous step. so rast is working and stuff, but since i have no actual clue what it is, i'm reading documentation.
+
+i opened the filesssssssss in python i'm so smart and cool and epic. 
+
+ok so here's what i have so far... a single object has "bands", which are basically 2D vectors of pixel values. An object can have multiple bands, but they all have the same dimensions. this is basically layers. now rast is special from just any ol' 2d vector because these pixels are actually mapped to real places on earth. apparently my new york maps are beeeeg. the numbers don't matter but i can basically see how much area they're covering. ok further thing i just learnt, obj.transform is basically a function which i multiply with a bunch of stuff to map the pixel position of the map to the irl place. 
+like, if i want to know where a tree in central park is, and i see it on the map, i need to find the pixel location of that tree on the map, let's say (x, y), then i do dis:
+    obj.transform * (x, y)
+and voila, i can go cut that tree down because i have it's location. insane shit. i wanna pee on it, affectionately.
+
+doing other stuff, but it's relatively less cool. just seeing different indices and stuff, writing it, saving blah blah blah. finished the documentation's py quickstart. moving on to how to actually preprocess right now.
+
+the time is 8:20 PM, that feels relevant idk. so i'm first planning on yeeting all the parts of this .tif file that aren't "new york city". that feels like a nice clean first step. welp, i copied the coordinates for connecticut and struggled with that shit for 20 minutes cuz it didn't make sense on the map. i deserve to be hanged sometimes.
+
+ight got the right coordinates. ight done clipping. i have no idea how to check if it's correct, but something happened. ok so, everything done... did a stupid thing where the new bottom was higher than the previous bottom, thought this was a mistake, took me almost 40 minutes to realise that a higher bottom number meant higher up geographically. well, it won't be a me project if i don't do some gloriously stupid shit. anyway so clipping done. what next?
