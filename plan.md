@@ -28,16 +28,16 @@ absolute dream shit, but my wee laptop and my stingy ass can't have it. hmmmmmmm
 
 reset the questions. limited the dataset to north india, hindi belt - rajasthan, punjab, delhi, haryana, uttar pradesh, bihar, and limited it to 2020. new questions: 
 
-    1. "Can you show me the latest satellite imagery of Delhi?"
-    2. "What is the land use distribution in Jaipur for 2020?"
-    3. "How has the deforestation rate changed in the forests of Uttar Pradesh over the last decade?"
-    4. "Can you provide the population density map of Patna?"
-    5. "What are the main agricultural zones in Punjab?"
-    6. "Show me the changes in urban development in Chandigarh from 2000 to 2020."
-    7. "Can you find flood-prone areas in Bihar?"
-    8. "What is the elevation profile of the Aravalli Range?"
-    9. "Provide a heat map of traffic congestion in Lucknow."
-    10. "Can you identify areas suitable for solar panel installations in Haryana?"
+    1. Can you show me the latest satellite imagery of Delhi?
+    2. What is the land use distribution in Jaipur for 2020?
+    3. How has the deforestation rate changed in the forests of Uttar Pradesh over the last decade?
+    4. Can you provide the population density map of Patna?
+    5. What are the main agricultural zones in Punjab?
+    6. Show me the changes in urban development in Chandigarh from 2000 to 2020.
+    7. Can you find flood-prone areas in Bihar?
+    8. What is the elevation profile of the Aravalli Range?
+    9. Provide a heat map of traffic congestion in Lucknow.
+    10. Can you identify areas suitable for solar panel installations in Haryana?
 
 feel like kind of a poop rn, but c'est la vie. 
 
@@ -51,3 +51,38 @@ before we get into that tho, let's get some textual data. now because of the lim
 tbh i can probably do get by with what i have, idk. one possible strategy atp is to just train with the land use data, cuz the primary purpose of this exercise is just to understand how this shit works. we can add text data later, it's not like nlp is an issue.
 
 another alternative is to find some textual data for some location, then download the land use data from there, and rewrite the questions to fit that. that's actually the better alternative. i deserve cookies sometimes :D
+
+ight-o im going with new york. t'is 4:02 PM and i've achieved... one github repo, lunch and a 15 min nap :|
+ok whatever, now i delete these 600 MB of .tif files. fun. i hates them. replaced with 2021 2022 2023 data of new york. tbh new york's a tiny part of it, it's a huge area, whatever it covered new york that's all that matters ig. gonna need new questions now. 
+
+question set #4389021832019 here goes:
+
+    1. Can you show me the latest satellite imagery of New York City from 2021?
+    2. What is the land use distribution in Manhattan for 2022?
+    3. How has the green space area in Central Park changed from 2021 to 2023?
+    4. Can you provide the population density map of Brooklyn for 2023?
+    5. What were the main traffic congestion areas in New York City in 2022?
+    6. Show me the changes in urban development in Queens from 2021 to 2023.
+    7. Can you find flood-prone areas in New York City from the 2022 data?
+    8. What is the elevation profile of Staten Island?
+    9. Provide a heat map of air pollution levels in the Bronx for 2021.
+    10. Can you identify areas suitable for new park developments in New York City based on 2023 data?
+
+sooooooooooooo sleepy. we march on. textual data let's go.
+
+new problem: too much data. what do i need. wtf is my life i'm so confused.
+here's what i'm thinking: 
+
+    1. satellite images
+    2. city maps
+    3. population maps
+    4. traffic maps (if that's a thing)
+    5. elevation? idk if that's a separate thing but i desire it.
+    6. heat map (again idk what that is)
+
+THESE ARE map datas :( 
+
+screw this it's a waste of time. nothing works. i'm just gonna move onto the next step now, i'll add more data later if i need it.
+
+# step 2: preprocessing
+
